@@ -203,6 +203,7 @@ Navbar
 .nav-logo {
   display: flex;
   align-items: flex-end;
+  margin-left: auto;
 }
 
 .nav-btn {
@@ -237,10 +238,6 @@ Navbar
   color: var(--primary-500);
 }
 
-.contact-link a {
-  padding: 0.15rem 1rem;
-}
-
 @media screen and (min-width: 992px) {
   .navbar {
     height: 6rem;
@@ -270,10 +267,7 @@ Navbar
     margin-right: 1rem;
     font-size: 1rem;
   }
-  .contact-link {
-    margin-right: 0;
-    margin-left: auto;
-  }
+  
 }
 
 /*
