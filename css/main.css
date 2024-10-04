@@ -40,6 +40,8 @@ html {
   --red-dark: #842029;
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
+  --red: #e54557;
+  
 
   /* fonts  */
   --headingFont: 'Roboto', sans-serif;
@@ -129,7 +131,7 @@ ul {
 .btn {
   cursor: pointer;
   color: var(--white);
-  background: var(--primary-500);
+  background: var(--red);
   border: transparent;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -186,6 +188,7 @@ Navbar
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0.1rem;
 }
 .nav-center {
   width: 90vw;
@@ -280,10 +283,8 @@ Page
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
-}
-.page {
-  padding-top: 2rem;
-  min-height: calc(100vh - (6rem + 4rem));
+  padding-top: 5rem; /* Tambahkan padding di atas */
+  min-height: calc(1vh - (6rem + 4rem)); /* pastikan tingginya cukup */
 }
 /*
 =============== 
@@ -347,6 +348,43 @@ Hero
     font-size: 4rem;
     margin-bottom: 0;
   }
+}
+
+/*
+=============== 
+About Page
+===============
+*/
+
+.about-page h2 {
+  text-transform: none;
+  font-weight: bold;
+}
+
+.about-page {
+  display: grid;
+  gap: 2rem 4rem;
+  padding-bottom: 3rem;
+}
+
+.about-img {
+  border-radius: var(--borderRadius);
+  height: 300px;
+}
+
+@media screen and (min-width: 992px) {
+  .about-page {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    align-items: center;
+  }
+  .about-img {
+    height: 100%;
+  }
+}
+
+.featured-title {
+  text-align: center;
 }
 
 /*
@@ -477,7 +515,7 @@ Recipe Template
 }
 .recipe-icons i {
   font-size: 1.5rem;
-  color: var(--primary-500);
+  color: var(--red);
 }
 .recipe-icons h5,
 .recipe-icons p {
@@ -496,7 +534,7 @@ Recipe Template
   font-weight: 600;
 }
 .recipe-tags a {
-  background: var(--primary-500);
+  background: var(--red);
   border-radius: var(--borderRadius);
   color: var(--white);
   padding: 0.05rem 0.5rem;
@@ -528,7 +566,7 @@ Recipe Template
 .single-instruction header p {
   text-transform: uppercase;
   font-weight: 600;
-  color: var(--primary-500);
+  color: var(--red);
   margin-bottom: 0;
 }
 .single-instruction > p {
@@ -553,6 +591,6 @@ Recipe Template
 .single-tool {
   border-bottom: 2px solid var(--grey-300);
   padding-bottom: 0.75rem;
-  color: var(--primary-500);
+  color: var(--red);
   text-transform: capitalize;
 }
