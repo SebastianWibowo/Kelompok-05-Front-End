@@ -137,7 +137,7 @@ ul {
 .btn {
   cursor: pointer;
   color: var(--white);
-  background: var(--primary-500);
+  background: var(--red);
   border: transparent;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -742,6 +742,6 @@ Recipe Template
 .single-tool {
   border-bottom: 2px solid var(--grey-300);
   padding-bottom: 0.75rem;
-  color: var(--primary-500);
+  color: var(--red);
   text-transform: capitalize;
 }
