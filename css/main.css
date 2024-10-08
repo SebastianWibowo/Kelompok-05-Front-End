@@ -313,7 +313,7 @@ Navbar
   transition: var(--transition);
 }
 .nav-link:hover {
-  color: var(--primary-500);
+  color: var(--red);
 }
 
 .contact-link a {
@@ -470,7 +470,7 @@ Recipes
   transition: var(--transition);
 }
 .tags-list a:hover {
-  color: var(--primary-500);
+  color: var(--red);
 }
 .recipe {
   display: block;
@@ -619,7 +619,7 @@ Tags Page
   padding: 0.75rem 0;
 }
 .tag:hover {
-  background: var(--primary-500);
+  background: var(--red);
 }
 .tag h5,
 .tag p {
